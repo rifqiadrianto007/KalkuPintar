@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
-#calc {
+#calculator {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -30,7 +30,7 @@
     background-color: rgb(237, 89, 30);
     color: white;
 }
-#res {
+#screen {
     padding: 10px;
 }
 #clear {

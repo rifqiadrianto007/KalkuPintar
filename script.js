@@ -1,22 +1,22 @@
 function Solve(val) {
-    var v = document.getElementById('res');
+    var v = document.getElementById('screen');
     v.value += val;
  }
  function Result() {
-    var num1 = document.getElementById('res').value;
+    var num1 = document.getElementById('screen').value;
     try {
        var num2 = eval(num1.replace('x', '*'));
-       document.getElementById('res').value = num2;
+       document.getElementById('screen').value = num2;
     } catch {
-       document.getElementById('res').value = 'Error';
+       document.getElementById('screen').value = 'Error';
     }
  }
  function Clear() {
-    var inp = document.getElementById('res');
+    var inp = document.getElementById('screen');
     inp.value = '';
  }
  function Back() {
-    var ev = document.getElementById('res');
+    var ev = document.getElementById('screen');
     ev.value = ev.value.slice(0, -1);
  }
  document.addEventListener('keydown', function (event) {
